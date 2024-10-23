@@ -1,4 +1,4 @@
-= 3D Graphics View
+= Widok Grafiki 3D
 :page-en: 3D_Graphics_View
 ifdef::env-github[:imagesdir: /en/modules/ROOT/assets/images]
 
