@@ -1,0 +1,16 @@
+= Narzędzie Pole
+:page-en: tools/Area
+ifdef::env-github[:imagesdir: /en/modules/ROOT/assets/images]
+
+Używając narzędzia:
+
+* Wybierz okrąg lub elipsę, by zmierzyć ich pole i wyświetlić je w _Widoku Algebry_ oraz stworzyć tekst dynamiczny w _Widoku Grafiki_ zawierający tą samą wartość.
+* Wybierz wielokąt, by zmierzyć jego pole i stworzyć tekst dynamiczny w _Widoku Grafiki_ zawierający tą samą wartość.
+
+
+[NOTE]
+====
+
+Zobacz także polecenie xref:/commands/Pole.adoc[Pole].
+
+====
