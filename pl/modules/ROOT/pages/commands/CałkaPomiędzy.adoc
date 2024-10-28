@@ -1,0 +1,52 @@
+= Polecenie CałkaPomiędzy
+:page-en: commands/IntegralBetween
+ifdef::env-github[:imagesdir: /en/modules/ROOT/assets/images]
+
+CałkaPomiędzy( <Funkcja>, <Funkcja>, <Liczba>, <Liczba> )::
+  Oblicza całkę oznaczoną różnicy funkcji _f(x) ‐ g(x)_ dwóch funkcji _f_ i _g_ w przedziale _[a, b]_,
+  gdzie _a_ jest mniejszą liczbą, a _b_ większą, względem głównej zmiennej.
+
+[EXAMPLE]
+====
+
+`++CałkaPomiędzy(sin(x), cos(x), 0, pi)++` daje w wyniku 2.
+
+====
+
+[NOTE]
+====
+
+To polecenie cieniuje również obszar między wykresami funkcji _f_ i _g_.
+
+====
+
+CałkaPomiędzy( <Funkcja>, <Funkcja>, <Liczba>, <Liczba>, <Wartość Logiczna> )::
+
+Oblicza całkę oznaczoną różnicy funkcji _f(x) ‐ g(x)_ dwóch funkcji _f_ i _g_ w przedziale _[a, b]_,
+  gdzie _a_ jest mniejszą liczbą, a _b_ większą, względem głównej zmiennej i cieniuju powiązany z nią obszar, jeśli
+_Wartość Logiczna_ jest _true_ (prawda). W przypadku, gdy _Wartość Logiczna_ jest _false_ (fałsz) powiązany z całką obszar jest cieniowany, ale wartość całki nie jest obliczana.
+
+
+== W Widoku CAS
+
+CałkaPomiędzy( <Funkcja>, <Funkcja>, <Liczba>, <Liczba> )::
+   Oblicza całkę oznaczoną różnicy funkcji _f(x) ‐ g(x)_ dwóch funkcji _f_ i _g_ w przedziale _[a, b]_,
+  gdzie _a_ jest mniejszą liczbą, a _b_ większą, względem głównej zmiennej.
+
+[EXAMPLE]
+====
+
+`++CałkaPomiędzy(sin(x), cos(x), pi / 4, pi * 5 / 4)++` daje wynik stem:[2 \sqrt{2}].
+
+====
+
+CałkaPomiędzy( <Funkcja>, <Funkcja>, <Zmienna>, <Liczba>, <Liczba> )::
+   Oblicza całkę oznaczoną różnicy funkcji _f(x) ‐ g(x)_ dwóch funkcji _f_ i _g_ w przedziale _[a, b]_,
+  gdzie _a_ jest mniejszą liczbą, a _b_ większą, względem danej zmiennej.
+
+[EXAMPLE]
+====
+
+`++CałkaPomiędzy(a * sin(t), a * cos(t), t, pi / 4, pi * 5 / 4)++` daje wynik stem:[2 \sqrt{2} a].
+
+====
