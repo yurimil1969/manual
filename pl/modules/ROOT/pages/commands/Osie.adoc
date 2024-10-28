@@ -1,0 +1,35 @@
+= Polecenie Osie
+:page-en: commands/Axes
+ifdef::env-github[:imagesdir: /en/modules/ROOT/assets/images]
+
+Osie( <Stożkowa> )::
+  Zwraca równania osi wielkiek i osi małej krzywej stożkowej.
+
+[NOTE]
+====
+
+Zobacz także polecenia xref:/commands/OśWielka.adoc[OśWielka] i xref:/commands/OśMała.adoc[OśMała].
+
+====
+
+Osie( <Kwadryka> )::
+  Tworzy 3 osie danej kwadryki.
+
+[EXAMPLE]
+====
+
+`++(x^2 + y^2 + z^2= 3)++` zwraca trzy proste
+
+_a_: _X_ = (0, 0, 0) + _λ_ (1, 0, 0), _b_: _X_ = (0, 0, 0) + _λ_ (0, 1, 0) and _c_: _X_ = (0, 0, 0) + _λ_ (0, 0, 1)
+
+====
+
+[NOTE]
+====
+
+W szczególności:
+
+* jeśli kwadryką jest _walec_, polecenie daje dwie osie dolnego okręgu oraz oś obrotu.
+* jeśli kwadryką jest _sfera_, polecenie daje trzy osie równoległe do osi układu współrzędnych.
+
+====
