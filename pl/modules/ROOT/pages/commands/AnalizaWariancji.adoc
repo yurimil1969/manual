@@ -1,0 +1,7 @@
+= Polecenie AnalizaWariancji
+:page-en: commands/ANOVA
+ifdef::env-github[:imagesdir: /en/modules/ROOT/assets/images]
+
+AnalizaWariancji( <Lista>, <Lista>, ...)::
+  Przeprowadza jednoczynnikowy test https://pl.wikipedia.org/wiki/Analiza_wariancji[Analizy wariancji] na podanych listach liczb.
+  Wyniki są zwracane w formie listy jako {wartość P, wartość statystyki F}.
